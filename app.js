@@ -4,8 +4,8 @@ let password = document.getElementById('pwd');
 let text1 = document.getElementById('text');
 let text2 = document.getElementById('text2');
 let button = document.querySelector(".btn");
-// let formPage = document.querySelector(".formDiv");
-// console.log(formPage)
+const togglePassword = document.querySelector('#togglePassword');
+
 
 const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 const passwordPattern = /^[a-z0-9]{8,10}$/;
@@ -53,6 +53,15 @@ function passwordValidation(){
     form.classList.add("invalidPwd");
   }
 }
+
+togglePassword.addEventListener('click', function (e) {
+  // toggle the type attribute
+  const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+  password.setAttribute('type', type);
+  // toggle the eye slash icon
+  this.classList.toggle('fa-eye-slash');
+});
+
 
 function openCongrat(){
   let formPage = document.querySelector(".formDiv");
