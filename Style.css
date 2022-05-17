@@ -147,3 +147,133 @@ input[type=checkbox]{
         background-color: #4c9e9e;
     }
 }
+
+/* FORM */
+ .formDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  height: 500px;
+ }
+
+ .formDiv h1, form label {
+  color: teal;
+}
+
+ .formDiv h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+ .container {
+   position: relative;
+   width: 80%;
+   background-color: rgb(160, 216, 216);
+   border-radius: 5px;
+   padding: 40px 20px;
+   height: 450px;
+ }
+
+ .form-group {
+   margin: 30px auto;
+ }
+
+ form input {
+   width: 90%;
+   background-color: rgb(213, 243, 243);
+   border: none;
+   border-radius: 10px;
+   padding: 10px;
+   color: teal;
+ }
+ #text {
+   margin:10px 0px 0px 10px;
+   display: block;
+   font-weight: 300;
+   font-style: italic;
+   font-size: 10px;
+ }
+
+ #text2 {
+  margin:10px 0px 0px 10px;
+  display: block;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 10px;
+ }
+
+ #form .email-box {
+   position: relative;
+ }
+
+ #form.invalid .email-box:before {
+  content: "";
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  width: 24px;
+  height: 24px;
+  background-image: url(invalid.png);
+  background-size: cover;
+  z-index: 1000;
+}
+
+#form.valid .email-box:before {
+  content: "";
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  width: 24px;
+  height: 24px;
+  background: url(valid.png);
+  background-size: cover;
+  z-index: 1000;
+}
+
+#togglePassword {
+  margin-left: -30px;
+  cursor: pointer;
+  color: teal;
+}
+ 
+.container a{
+  text-align: center;
+  margin: 10px 0px;
+  text-decoration: none;
+  color: teal;
+}
+
+.container a:hover {
+  text-decoration: none;
+}
+
+ h3 {
+  color: teal;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 50px;
+ }
+
+ button {
+   margin: 10px 0px;
+ }
+
+ @media screen and (min-width: 500px){
+   .container {
+     width: 60%;
+   } 
+ }
+
+ @media screen and (min-width: 750px){
+  .container {
+    width: 50%;
+  } 
+
+  @media screen and (min-width: 1000px){
+    .container {
+      width: 30%;
+    } 
+  }
+}
