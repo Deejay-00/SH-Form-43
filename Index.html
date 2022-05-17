@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,60 +11,85 @@
     <title>SH form</title>
     <script defer src="app.js"></script>
 </head>
+
 <body>
-        <nav class="nav-bar">
-            <!-- LOGO -->
-            <div class="logo">FORM-43</div>
+    <nav class="nav-bar">
+        <!-- LOGO -->
+        <div class="logo">FORM-43</div>
 
-            <!-- Navigations -->
-            <ul class="nav-links">
-                <input type="checkbox" id="checkbox-toggle" />
-                <label for="checkbox-toggle" class="hamburger">&#9776;</label>
+        <!-- Navigations -->
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox-toggle" />
+            <label for="checkbox-toggle" class="hamburger">&#9776;</label>
 
-                <!-- NAVIGATION MENU -->
+            <!-- NAVIGATION MENU -->
 
-                <div class="menu">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li class="course"><a href="">Courses</a>
+            <div class="menu">
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li class="course">
+                    <a href="">Courses</a>
 
-                        <!-- DROP-DOWN -->
-                        <ul class="drop-down">
-                            <li><a href="#">React</a></li>
-                            <li><a href="#">HTML/CSS</a></li>
-                            <li><a href="#">Quality Assurance</a></li>
-                            <li><a href="#">Product Management</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#"> Certification</a></li>
+                    <!-- DROP-DOWN -->
+                    <ul class="drop-down">
+                        <li>
+                            <a href="#">React</a>
+                        </li>
+                        <li>
+                            <a href="#">HTML/CSS</a>
+                        </li>
+                        <li>
+                            <a href="#">Quality Assurance</a>
+                        </li>
+                        <li>
+                            <a href="#">Product Management</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"> Certification</a>
+                </li>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- FORM SECTION -->
+
+    <section class="form-section">
+    <div class="formDiv">
+        <div class="container">
+            <h1 class="headLab">User Login</h1>
+
+            <form id="form">
+
+                <div class="form-group email-box">
+                    <label for="email">Email address:</label>
+                    <br>
+                    <input type="email" placeholder="Enter email" id="email" onkeydown="emailValidation()">
+                    <span id="text"></span>
                 </div>
-            </ul>
-        </nav>
 
-        <div class="formDiv">
-         <div class="container">
-          <h1 class="headLab">User Login</h1>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <br>
+                    <input type="password" placeholder="Enter password" id="pwd" onkeydown="passwordValidation()">
+                    <i class="far fa-eye" id="togglePassword"></i>
+                    <span id="text2"></span>
+                </div>
 
-          <form id="form">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
 
-            <div class="form-group email-box" >
-              <label for="email">Email address:</label><br>    
-              <input type="email" placeholder="Enter email" id="email" onkeydown="emailValidation()">
-              <span id="text"></span>
-            </div>
-              
-            <div class="form-group">
-              <label for="pwd">Password:</label><br>
-              <input type="password" placeholder="Enter password" id="pwd" onkeydown="passwordValidation()">
-              <i class="far fa-eye" id="togglePassword" ></i>
-              <span id="text2"></span>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-
-          <a href="#"><p>Forgot Password</p></a>
-      </div>
+            <a href="#">
+                <p>Forgot Password ?</p>
+            </a>
+        </div>
     </div>
+</section>
 </body>
+
 </html>
