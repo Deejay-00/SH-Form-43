@@ -231,6 +231,12 @@ input[type=checkbox]{
   background-size: cover;
   z-index: 1000;
 }
+
+#togglePassword {
+  margin-left: -30px;
+  cursor: pointer;
+  color: teal;
+}
  
 .container a{
   text-align: center;
