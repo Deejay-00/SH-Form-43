@@ -57,6 +57,7 @@ li{
     /* flex-wrap: wrap; */
     gap: 1em;
     font-size: 18px;
+    z-index: 1;
 }
 
 .menu li:hover{
