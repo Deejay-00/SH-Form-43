@@ -60,35 +60,58 @@
     <!-- FORM SECTION -->
 
     <section class="form-section">
-        <div class="formDiv">
-            <div class="container">
-                <h1 class="headLab">User Login</h1>
 
-                <form id="form">
+    <div class="formDiv">
+      <div class="container">
+          <h1 class="headLab">User Login</h1>
 
-                    <div class="form-group email-box">
-                        <label for="email">Email address:</label>
-                        <br>
-                        <input type="email" placeholder="Enter email" id="email" onkeydown="emailValidation()">
-                        <span id="text"></span>
-                    </div>
+          <form id="form">
 
-                    <div class="form-group">
-                        <label for="pwd">Password:</label>
-                        <br>
-                        <input type="password" placeholder="Enter password" id="pwd" onkeydown="passwordValidation()">
-                        <i class="far fa-eye" id="togglePassword"></i>
-                        <span id="text2"></span>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-
-                <a href="#">
-                    <p>Forgot Password ?</p>
-                </a>
+            <div class="form-group email-box" >
+              <label for="username">Username:</label><br>    
+              <input type="text" placeholder="Enter Username" id="username">
+              <span id="text"></span>
             </div>
-        </div>
+
+            <div class="form-group email-box" >
+              <label for="email">Email address:</label><br>    
+              <input type="email" placeholder="Enter email" id="email" onkeydown="emailValidation()">
+              <span id="text"></span>
+            </div>
+
+            <div class="form-group email-box" >
+              <label for="phone-numbaer">Phone Number:</label><br>    
+              <input type="number" placeholder="Enter Phone Number" id="number" onkeydown="emailValidation()">
+              <span id="text"></span>
+            </div>
+              
+            <div class="form-group">
+              <label for="pwd">Password:</label><br>
+              <input type="password" placeholder="Enter password" id="pwd" onkeydown="passwordValidation()">
+              <i class="fa fa-eye-slash" aria-hidden="true" id="togglePassword" ></i>
+              <span id="text2"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="cfm-pwd">Confirm Password:</label><br>
+              <input type="password" placeholder="Confirm password" id="cfm-pwd">
+              <span id="text2"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="gender">Gender:</label><br>
+              <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+          <p><a href="#" id="forget">Forgot Password</a></p>
+      </div>
+    </div>
     </section>
 </body>
 
