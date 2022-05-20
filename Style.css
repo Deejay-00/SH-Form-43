@@ -162,7 +162,7 @@ input[type=checkbox]{
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  height: 530px;
+  height: 600px;
  }
 
  .formDiv h1, form label {
@@ -172,7 +172,6 @@ input[type=checkbox]{
  .formDiv h1 {
   font-size: 20px;
   text-align: center;
-  margin-bottom: 20px;
 }
 
  .container {
@@ -197,20 +196,13 @@ input[type=checkbox]{
    color: teal;
    height: 25px;
  }
- #text {
-   margin:10px 0px 0px 10px;
+
+ #text, #text2, #userNameText, #phoneNumberText, #confirmText {
+   margin:5px 0px 0px 10px;
    display: block;
    font-weight: 300;
    font-style: italic;
    font-size: 10px;
- }
-
- #text2 {
-  margin:5px 0px 0px 10px;
-  display: block;
-  font-weight: 300;
-  font-style: italic;
-  font-size: 10px;
  }
 
  #form .email-box {
