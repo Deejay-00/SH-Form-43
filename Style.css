@@ -155,8 +155,6 @@ input[type=checkbox]{
 
 /* FORM */
 
-.form-section{
-}
  .formDiv {
   display: flex;
   align-items: center;
@@ -262,25 +260,33 @@ p {
     color: teal;
     height: 25px;
 
- button {
+ .btn {
+   border: none;
    margin: 5px 0px;
-   height: 25px;
+   background-color: teal;
  }
 
+ .btn:hover{
+   background-color: white;
+   color: teal;
+   font-weight: bolder;
+ }
+ 
+    
  @media screen and (min-width: 500px){
    .container {
-     width: 60%;
+     width: 50%;
    } 
  }
 
- @media screen and (min-width: 750px){
+ @media screen and (min-width: 700px){
   .container {
-    width: 50%;
-  } 
+    width: 40%;
+    }
+  }
 
-  @media screen and (min-width: 1000px){
+  @media screen and (min-width: 900px){
     .container {
       width: 30%;
-    } 
-  }
+    }     
 }
